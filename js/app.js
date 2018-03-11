@@ -12,3 +12,11 @@ let betterWords = storyWords.filter(word => {
   !unnecessaryWords.includes(word)
 })
 
+let reallyCounter = 0;
+let veryCounter = 0;
+let basicCounter = 0;
+betterWords.forEach(word => {
+  if(word === 'really') reallyCounter++;
+  else if(word === 'very') veryCounter++;
+  else if(word === 'basically') basicCounter++;
+});
